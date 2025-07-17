@@ -17,10 +17,7 @@ function HomeFeatures() {
             </span>
           </div>
           <h2 className="mb-6">Everything You Need in One Platform</h2>
-          <p className="max-w-3xl mx-auto">
-            Streamline your API workflow with powerful tools designed for modern
-            development teams
-          </p>
+       
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {/* Feature 1 - AI Analytics */}

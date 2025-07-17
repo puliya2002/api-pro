@@ -1,11 +1,22 @@
 import React from "react";
 import { Cpu, Terminal, ArrowRight, Network } from "lucide-react";
 import GradientButton from "../components/GradientButton";
+import BgVideo from "../assets/bgvideo.mp4";
 
 function HomeHero() {
   return (
-    <section className="relative z-10 px-6 py-24 text-center">
-      <div className="max-w-5xl mx-auto pt-12">
+    <section className="relative z-10 px-6 py-24 text-center overflow-hidden">
+      {/* Background Video with 65% opacity */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-65 pointer-events-none"
+        src={BgVideo}
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-hidden="true"
+      />
+      <div className="max-w-5xl mx-auto pt-12 relative z-10">
         {/* Status Badge */}
         <div className="mb-8">
           <span className="inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-semibold tracking-wide uppercase px-4 py-2 rounded-full">

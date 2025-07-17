@@ -46,7 +46,7 @@ export function PricingCard({
       <button
         className={`font-semibold py-2 rounded-lg transition-all ${
           highlight
-            ? "bg-cyan-400 text-black hover:bg-cyan-300"
+            ? "bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 text-black hover:bg-cyan-300"
             : "bg-cyan-400 text-black hover:bg-cyan-300"
         }`}
       >

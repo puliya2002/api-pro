@@ -9,6 +9,7 @@ import {
   X,
 } from "lucide-react";
 import { navLinks } from "../constsnts/navLinks";
+import GradientButton from "../components/GradientButton";
 
 const iconMap = { Terminal, Server, Code, Network };
 
@@ -42,8 +43,8 @@ function HomeNav() {
               </a>
             );
           })}
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-600 text-black px-6 py-2 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 transform hover:scale-105 font-semibold">
-            Sign In
+          <button className="bg-gradient-to-r from-cyan-500 to-blue-400 text-black px-6 py-2 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 transform hover:scale-105 font-semibold">
+            Get Started
           </button>
         </div>
         {/* Mobile Nav */}
@@ -75,9 +76,9 @@ function HomeNav() {
                   </a>
                 );
               })}
-              <button className="mx-6 mt-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-black px-6 py-2 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 transform hover:scale-105 font-semibold">
+              <GradientButton className="mx-6 mt-4 px-6 py-2 text-black font-semibold">
                 Sign In
-              </button>
+              </GradientButton>
             </div>
           )}
         </div>

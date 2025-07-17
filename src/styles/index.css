@@ -2,10 +2,17 @@
 
 :root {
   --font-poppins: Poppins, sans-serif;
-  --color-primary: oklch(0.72 0.11 178);
-  --color-secondary: oklch(0.72 0.11 250);
+  --color-cyan: #06b6d4;
+  --color-blue: #2563eb;
+  --color-green: #22c55e;
+  --color-purple: #a21caf;
+  --color-pink: #ec4899;
+  --color-yellow: #eab308;
+  --color-red: #ef4444;
+  --color-primary: oklch(0.72 0.11 178); /* can be replaced with var(--color-cyan) if desired */
+  --color-secondary: oklch(0.72 0.11 250); /* can be replaced with var(--color-blue) if desired */
   --color-background: #0a0a0a;
-  --color-accent: oklch(0.85 0.18 200);
+  --color-accent: oklch(0.85 0.18 200); /* can be replaced with var(--color-green) if desired */
   --color-muted: #22223b;
 }
 
@@ -54,4 +61,19 @@
   .bg-muted {
     background-color: var(--color-muted);
   }
+  /* Utility classes for main palette */
+  .text-cyan { color: var(--color-cyan); }
+  .bg-cyan { background-color: var(--color-cyan); }
+  .text-blue { color: var(--color-blue); }
+  .bg-blue { background-color: var(--color-blue); }
+  .text-green { color: var(--color-green); }
+  .bg-green { background-color: var(--color-green); }
+  .text-purple { color: var(--color-purple); }
+  .bg-purple { background-color: var(--color-purple); }
+  .text-pink { color: var(--color-pink); }
+  .bg-pink { background-color: var(--color-pink); }
+  .text-yellow { color: var(--color-yellow); }
+  .bg-yellow { background-color: var(--color-yellow); }
+  .text-red { color: var(--color-red); }
+  .bg-red { background-color: var(--color-red); }
 }

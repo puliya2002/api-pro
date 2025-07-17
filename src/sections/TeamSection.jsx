@@ -29,12 +29,10 @@ export function TeamSection() {
   }
 
   return (
-    <section className="relative z-10 px-6 pt-14">
+    <section className="relative z-10 px-6 py-14">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="heading-1 mb-4 pt-10">The Team Behind API PRO</h2>
-        <p className="paragraph text-lg max-w-2xl mx-auto">
-          Meet the people who make API PRO possible.
-        </p>
+        
       </div>
       {loading ? (
         <div className="text-center text-gray-400">Loading team...</div>

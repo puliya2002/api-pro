@@ -3,6 +3,7 @@ import React from "react";
 import HomeHero from "../sections/HomeHero";
 import HomeFeatures from "../sections/HomeFeatures";
 import HomeSocialProof from "../sections/HomeSocialProof";
+import BgVideo from "../assets/bgvideo.mp4";
 
 function Home() {
   return (

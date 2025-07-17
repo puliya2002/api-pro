@@ -1,4 +1,10 @@
 export const navLinks = [
+
+  {
+    label: "About Us",
+    href: "/about-us",
+    icon: "Network",
+  },
   {
     label: "Pricing",
     href: "/pricing",
@@ -9,11 +15,7 @@ export const navLinks = [
     href: "/api-documentation",
     icon: "Code",
   },
-  {
-    label: "About Us",
-    href: "/about-us",
-    icon: "Network",
-  },
+
   {
     label: "Contact Us",
     href: "/contact-us",

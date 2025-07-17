@@ -121,6 +121,7 @@ function ContactUs() {
               description="123 Tech Avenue, Innovation City, Connectiville 45678"
               titleClass="text-lg font-bold text-cyan-400 mb-1"
               paddingClass="pt-5 px-6"
+              learnMoreLabel=""
             />
             <FeatureCard
               icon={Mail}
@@ -129,6 +130,7 @@ function ContactUs() {
               description="hello@apipro.com"
               titleClass="text-lg font-bold text-cyan-400 mb-1"
               paddingClass="pt-5 px-6"
+              learnMoreLabel=""
             />
             <FeatureCard
               icon={Phone}
@@ -137,6 +139,7 @@ function ContactUs() {
               description="+1 (555) 123-4567"
               titleClass="text-lg font-bold text-cyan-400 mb-1"
               paddingClass="pt-5 px-6"
+              learnMoreLabel=""
             />
           </div>
         </div>
