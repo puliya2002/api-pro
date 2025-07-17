@@ -12,10 +12,10 @@ function HomeSocialProof() {
               <span>Trusted Worldwide</span>
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className=" mb-6">
             Trusted by the World's Most Innovative Companies
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          <p className=" max-w-2xl mx-auto">
             Join thousands of developers who trust API PRO to power their
             mission-critical applications
           </p>
@@ -84,26 +84,6 @@ function HomeSocialProof() {
           </div>
         </div>
         {/* Tech Metrics */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center p-6 bg-gray-900/30 rounded-xl border border-cyan-500/10">
-            <div className="text-3xl font-bold text-cyan-400 mb-2">10M+</div>
-            <div className="text-gray-400 text-sm">API Calls/Day</div>
-          </div>
-          <div className="text-center p-6 bg-gray-900/30 rounded-xl border border-green-500/10">
-            <div className="text-3xl font-bold text-green-400 mb-2">99.99%</div>
-            <div className="text-gray-400 text-sm">Uptime SLA</div>
-          </div>
-          <div className="text-center p-6 bg-gray-900/30 rounded-xl border border-purple-500/10">
-            <div className="text-3xl font-bold text-purple-400 mb-2">
-              &lt;50ms
-            </div>
-            <div className="text-gray-400 text-sm">Response Time</div>
-          </div>
-          <div className="text-center p-6 bg-gray-900/30 rounded-xl border border-yellow-500/10">
-            <div className="text-3xl font-bold text-yellow-400 mb-2">150+</div>
-            <div className="text-gray-400 text-sm">Countries</div>
-          </div>
-        </div>
       </div>
     </section>
   );

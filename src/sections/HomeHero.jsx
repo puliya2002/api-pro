@@ -2,7 +2,6 @@ import React from "react";
 import { Cpu, Terminal, ArrowRight, Network } from "lucide-react";
 import GradientButton from "../components/GradientButton";
 
-
 function HomeHero() {
   return (
     <section className="relative z-10 px-6 py-24 text-center">
@@ -15,13 +14,13 @@ function HomeHero() {
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
           </span>
         </div>
-        <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 leading-[1.05] ">
+        <h1 className=" mb-6">
           Effortless API Management.
           <span className="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 text-transparent bg-clip-text">
             Powerful Results.
           </span>
         </h1>
-        <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="  max-w-4xl mx-auto mb-8">
           API PRO is the all-in-one platform designed to take your APIs from
           development to production with unparalleled speed, security, and
           AI-driven insights.
