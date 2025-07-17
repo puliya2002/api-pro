@@ -7,8 +7,6 @@ import ContactUs from "./pages/ContactUs";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./styles/App.css";
 
 function App() {

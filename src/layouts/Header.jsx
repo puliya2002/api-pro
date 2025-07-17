@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { navLinks } from "../constsnts/navLinks";
 import GradientButton from "../components/GradientButton";
+import { Link } from "react-router-dom"; // ✅ Import Link
 
 const iconMap = { Terminal, Server, Code, Network };
 
@@ -19,7 +20,8 @@ function HomeNav() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="mx-auto max-w-4xl flex items-center justify-between px-6 py-4 bg-black/80 rounded-xl border border-cyan-500/20 shadow-lg mt-4">
-        <a href="/">
+        {/* ✅ Use Link for homepage */}
+        <Link to="/">
           <div className="flex items-center space-x-3">
             <div className="relative">
               <Database className="w-8 h-8 text-cyan-400" />
@@ -27,26 +29,28 @@ function HomeNav() {
             </div>
             <span className="text-2xl font-bold text-cyan-400">API PRO</span>
           </div>
-        </a>
+        </Link>
+
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map(({ label, href, icon }) => {
             const Icon = iconMap[icon];
             return (
-              <a
+              <Link
                 key={label}
-                href={href}
+                to={href} // ✅ Use Link here
                 className="text-gray-300 hover:text-cyan-400 transition-colors duration-200 flex items-center space-x-1"
               >
                 {Icon && <Icon className="w-4 h-4" />}
                 <span>{label}</span>
-              </a>
+              </Link>
             );
           })}
           <button className="bg-gradient-to-r from-cyan-500 to-blue-400 text-black px-6 py-2 rounded-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 transform hover:scale-105 font-semibold">
             Get Started
           </button>
         </div>
+
         {/* Mobile Nav */}
         <div className="md:hidden flex items-center">
           <button
@@ -65,15 +69,15 @@ function HomeNav() {
               {navLinks.map(({ label, href, icon }) => {
                 const Icon = iconMap[icon];
                 return (
-                  <a
+                  <Link
                     key={label}
-                    href={href}
+                    to={href} // ✅ Use Link here
                     className="flex items-center space-x-2 px-6 py-3 text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/10 transition-colors duration-200 rounded-lg"
                     onClick={() => setMobileOpen(false)}
                   >
                     {Icon && <Icon className="w-5 h-5" />}
                     <span>{label}</span>
-                  </a>
+                  </Link>
                 );
               })}
               <GradientButton className="mx-6 mt-4 px-6 py-2 text-black font-semibold">
